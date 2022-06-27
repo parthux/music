@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600;800&display=swap');
+body{
+    background-image: url('../img/3687333.jpg');
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    background-size: cover;
+}
+.nav, .main{
+    display: flex;
+    overflow: hidden;
+}
+.nav{
+    background-color: hsla(0, 0%, 0%, 0.449);
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__img{
+    width: 5rem;
+    height: 100%;
+}
+.nav__hamburguesa{
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav__input-menu, .nav__links{
+    display: none;
+}
+.nav__label{
+    width: 2rem;
+    height: 2.5rem;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: column;
+    transition: all 1s;
+    position: relative;
+}
+.nav__img-linea{
+    background-color: white;
+    width: 100%;
+    height: 0.3rem;
+    margin: 0.2rem;
+    transition: all 1s;
+}
+.nav__links{
+    position: fixed;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.904);
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.nav__link{
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0.3rem 0;
+    padding: 0.2rem;
+    color: white;
+}
+/*Main Start*/
+.main{
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section{
+    display: inherit;
+    flex-direction: column;
+    padding: 1rem;
+}
+.section__title, .section__paragraph{
+    margin-bottom: 2rem;
+}
+.section__title{
+    font-size: 2rem;
+}
+.section__buttom-container{
+    display: inherit;
+    justify-content: center;
+    flex: 100%;
+}
+.section__buttom{
+    display: block;
+    padding: 0.5rem 0;
+    border-radius: 25px;
+    text-decoration: none;
+    border: transparent;
+    max-width: 15rem;
+    width:50%;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 6px 6px 6px 3px rgba(0, 0, 0, 0.727);
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+/*Main End*/
+
+@media screen and (min-width: 1024px) {
+    .nav__hamburguesa{
+        display: none;
+    }
+    .nav__links{
+        position: static;
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        flex-direction: row;
+    }
+    .section{
+        width: 50%;
+    }
+}

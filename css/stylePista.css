@@ -1,0 +1,67 @@
+.main{
+    align-items: normal;
+    height: auto;
+    flex-flow: row wrap;
+    padding: 0.5rem;
+}
+.card{
+    flex: 100%;
+    margin:1rem;
+    padding: 0.5rem;
+    height: auto;
+    border-radius: 10px;
+    border: transparent;
+    background-color: rgba(0, 0, 0, 0.545);
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.54);
+}
+.card__header{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.card__img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    display: block;
+    margin: 1rem 0;
+}
+.card__end{
+    margin-top: 1rem;
+}
+.card__link{
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    color: white;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border-radius: 10px;
+    border: transparent;
+}
+.index-pista{
+    flex: 100%;
+    margin: 1.5rem 0;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.index-pista__index{
+    display: inline-block;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    border: none;
+}
+@media screen and (min-width: 568px){
+    .card{
+        flex: 40%
+    }
+}
+@media screen and (min-width: 1024px){
+    .card{
+        flex: 20%
+    }
+}

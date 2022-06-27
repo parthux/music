@@ -1,0 +1,6 @@
+/*Animation Section Buttom nav__link card__link start*/
+.section__buttom:hover, .nav__link:hover, .card__link:hover, .index-pista__index:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+/*Animation Section Buttom nav__link card__link end*/

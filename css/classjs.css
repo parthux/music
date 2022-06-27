@@ -1,0 +1,19 @@
+/* Class javascript start */
+.nav__link--action{
+    display: flex;
+}
+.nav__img-linea--1{
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.nav__img-linea--2{
+    opacity: 0;
+}
+.nav__img-linea--3{
+    transform: rotate(45deg);
+    position: absolute;
+}
+.body{
+    overflow-y: hidden;
+}
+/* Class javascript end */
