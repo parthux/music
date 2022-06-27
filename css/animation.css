@@ -4,3 +4,8 @@
     transition: 1s;
 }
 /*Animation Section Buttom nav__link card__link end*/
+/*Color Buttom nav__link start*/
+.nav__link:hover{
+    color:rgb(90, 89, 89);
+}
+/*Color Buttom nav__link end*/
